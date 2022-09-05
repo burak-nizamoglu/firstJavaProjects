@@ -18,6 +18,18 @@ public class dikUcgendeHipotenusuBulanProgram {
         
         double hipotenus = Math.sqrt((birinciDikKenar*birinciDikKenar)+ (ikinciDikKenar*ikinciDikKenar));
         System.out.println("Hipotenüs : " + hipotenus);
+        double ucgeninCevresi = (birinciDikKenar + ikinciDikKenar + hipotenus);
+        double u = ucgeninCevresi/2;
+
+        double ucgeninAlani = Math.sqrt((u*(u-birinciDikKenar)*(u-ikinciDikKenar)*(u-hipotenus)));
+        System.out.println("Üçgenin alanı : " + ucgeninAlani);
+
+
+
+
+        
+
+
     }
     
 }
