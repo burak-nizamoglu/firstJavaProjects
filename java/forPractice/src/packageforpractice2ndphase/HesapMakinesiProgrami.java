@@ -13,6 +13,7 @@ public class HesapMakinesiProgrami {
         n2 = inp.nextInt();
         System.out.println("1-Addition\n2-Substraction\n3-Multipication\n4-Division");
         selection = inp.nextInt();
+        inp.close();
             switch (selection) {
                 case 1:
                     System.out.println("Result is: " + (n1+n2));
@@ -32,6 +33,7 @@ public class HesapMakinesiProgrami {
                                 System.out.println("Result is: " + n1/n2);                            
                         }
                     break;
+
             }
     }   
 }
