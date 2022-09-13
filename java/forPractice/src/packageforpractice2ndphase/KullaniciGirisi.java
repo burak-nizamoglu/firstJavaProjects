@@ -10,13 +10,13 @@ public class KullaniciGirisi {
         nickname = inp.nextLine();
         System.out.print("Please type your password :");
         password = inp.nextLine();
-        if (nickname.equals("buraknizamoglu") && password.equals("12345")) {
+        if (nickname.equals("kylix") && password.equals("12345")) {
             System.out.println("Nickname and password are correct. Successfully logged in the system."); }
-            else if (!nickname.equals("buraknizamoglu") && password.equals("12345")){
+            else if (!nickname.equals("kylix") && password.equals("12345")){
                 System.out.println("Password is correct but nickname is wrong. Please check it and try again later.");
             }
             else { System.out.println("Password and nickname are both wrong. Try again.");}
-                    if (nickname.equals("buraknizamoglu") && !password.equals("12345")) {
+                    if (nickname.equals("kylix") && !password.equals("12345")) {
                         System.out.println("Nickname is correct but password is wrong.Please check it and try again later. Do you want to reset your password ?");
                         String answer = inp.nextLine();
                         if(answer.equals("yes")) {
@@ -30,7 +30,7 @@ public class KullaniciGirisi {
                                 nickname = inp.nextLine();
                                 System.out.println("Please type your password :");
                                 password = inp.nextLine();
-                                if (nickname.equals("buraknizamoglu") && password.equals(newPassword)){
+                                if (nickname.equals("kylix") && password.equals(newPassword)){
                                     System.out.println("Log in successful.");
                             }
                             else {
@@ -39,7 +39,7 @@ public class KullaniciGirisi {
                                 nickname = inp.nextLine();
                                 System.out.print("Please type your password :");
                                 password = inp.nextLine();
-                                if (nickname.equals("buraknizamoglu") && password.equals(newPassword)){
+                                if (nickname.equals("kylix") && password.equals(newPassword)){
                                     System.out.println("Log in successful.");
                                 }   
                             }
