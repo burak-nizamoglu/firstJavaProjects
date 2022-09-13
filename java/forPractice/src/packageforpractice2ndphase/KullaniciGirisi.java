@@ -21,18 +21,17 @@ public class KullaniciGirisi {
                         String answer = inp.nextLine();
                         if(answer.equals("yes")) {
                             System.out.print("Please type your new password :");
-                            String newpassword = inp.nextLine();  
-                            if(newpassword.equals(password) || newpassword.equals("12345")){
+                            String newPassword = inp.nextLine();  
+                            if(newPassword.equals(password) || newPassword.equals("12345")){
                                 System.out.println("New password can't be same with old password and the password that you tried last. New password couldn't be created. Please type another password.");
-                                newpassword = inp.nextLine();
+                                newPassword = inp.nextLine();
                                 System.out.println("New password successfully created, please try logging in again.");
                                 System.out.println("Please type your nickname :");
                                 nickname = inp.nextLine();
                                 System.out.println("Please type your password :");
                                 password = inp.nextLine();
-                                if (nickname.equals("buraknizamoglu") && password.equals(newpassword)){
+                                if (nickname.equals("buraknizamoglu") && password.equals(newPassword)){
                                     System.out.println("Log in successful.");
-
                             }
                             else {
                                 System.out.println("Please try logging in again.");
@@ -40,23 +39,18 @@ public class KullaniciGirisi {
                                 nickname = inp.nextLine();
                                 System.out.print("Please type your password :");
                                 password = inp.nextLine();
-                                if (nickname.equals("buraknizamoglu") && password.equals(newpassword)){
+                                if (nickname.equals("buraknizamoglu") && password.equals(newPassword)){
                                     System.out.println("Log in successful.");
                                 }   
                             }
-
-
                         }
-
                     }
                     else {
                         System.out.println("Okay. It is choice.");
                     }
-
             }
             inp.close();
         }
-        
     }
     
 
