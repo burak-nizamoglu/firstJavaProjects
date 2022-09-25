@@ -20,5 +20,6 @@ public class GirilenSayiyaKadarOlanCiftSayilariBulanProgram {
         }     
         double average = total/number;
         System.out.println(average);
+        inp.close();
     }
 }
